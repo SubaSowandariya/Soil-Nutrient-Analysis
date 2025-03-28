@@ -1,0 +1,10 @@
+Flask
+deep-translator
+pandas
+numpy
+joblib
+scikit-learn
+catboost
+lightgbm
+groq
+python-dotenv
