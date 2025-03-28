@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/webp" href="/static/favi.webp">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('/static/background1.webp') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #fff; /* White text */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soil Deficiency Analysis and Irrigation Scheduling</h1>
+        <p>
+            This page provides Soil Nutrient Deficiency Analysis and Irrigation Scheduling to support healthy crop growth. Nutrient analysis helps identify missing elements like nitrogen, phosphorus, and potassium. Proper irrigation ensures plants can absorb these nutrients, preventing deficiencies. Too much water can wash away nutrients, while too little can limit their uptake. By managing both nutrients and irrigation, crops grow better, and soil remains healthy.
+        </p>
+        <a href="{{ url_for('index') }}" class="btn">Get Started</a>
+    </div>
+</body>
+</html>
